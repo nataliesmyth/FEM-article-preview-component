@@ -1,0 +1,180 @@
+:root { 
+    --clr-dark: 217 19% 35%;
+    --clr-blue: 214 17% 51%;
+    --clr-gray-blue: 212 23% 69%;
+    --clr-light: 210 46% 95%;
+    --clr-background: 210 29% 84%;
+
+    --fw-reg: 500;
+    --fw-bold: 700;
+
+    --ff-text: "Manrope", sans-serif;
+
+    --fs-large: 1rem;
+    --fs-small: 0.8125rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+    /* background-color: hsl(var(--clr-background) / .25); */
+    font-family: var(--ff-text);
+    font-size: var(--fs-small);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.col-img > img {
+    width: 100%;
+    /* height: 200px; */
+    object-fit: fill;
+}
+
+.col-content {
+    padding: 2em 2em 0 2em;
+}
+
+.title {
+    font-size: var(--fs-large);
+    color: hsl(var(--clr-dark));
+    line-height: 1.75;
+}
+
+.article-component {
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 20.4375rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 40px 40px -10px hsl(var(--clr-background));
+    background-color: #FFFFFF;
+}
+
+.article-text {
+    line-height: 1.75;
+    color: hsl(var(--clr-blue))
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 4rem;
+    margin-block: 2em;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+}
+
+.text > p {
+    margin-top: 0;
+    padding-inline-start: .5rem;
+}
+
+.name {
+    color: hsl(var(--clr-dark));
+    font-weight: var(--fw-bold)
+}
+
+.date {
+    color: hsl(var(--clr-gray-blue))
+}
+
+.share-btn {
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: .5rem;
+}
