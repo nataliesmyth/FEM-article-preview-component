@@ -141,10 +141,11 @@ body {
 
 .share {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-height: 4rem;
-    margin-block: 2em;
+    padding-block: 3em;
+    width: 100%;
 }
 
 .avatar {
@@ -160,7 +161,7 @@ body {
 
 .text > p {
     margin-top: 0;
-    padding-inline-start: .5rem;
+    padding-inline-start: .75rem;
 }
 
 .name {
@@ -177,4 +178,41 @@ body {
     border-radius: 50%;
     aspect-ratio: 1;
     padding: .5rem;
+}
+
+.active {
+    background: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.share-btn-dark {
+    background-color: hsl(var(--clr-blue));
+    color: #FFFFFF;
+}
+
+.share-arrow {
+    color: red;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.icons {
+    display: flex;
+}
+
+.icons > img {
+    width: 20px;
+    height: 20px;
+}
+
+.socials > p {
+    color: #9DAEC2;
+    text-transform: uppercase;
 }
