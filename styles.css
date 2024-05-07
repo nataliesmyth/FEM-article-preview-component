@@ -3,8 +3,8 @@
     --clr-blue: 214 17% 51%;
     --clr-gray-blue: 212 23% 69%;
     --clr-light: 210 46% 95%;
-    --clr-background: 210 29% 84%;
-
+    --clr-background: 207 41% 91%;
+    --clr-background: 212 45% 94%;
     --fw-reg: 500;
     --fw-bold: 700;
 
@@ -89,7 +89,7 @@ textarea:not([rows]) {
 }
 
 body {
-    /* background-color: hsl(var(--clr-background) / .25); */
+    background-color: hsl(var(--clr-background));
     font-family: var(--ff-text);
     font-size: var(--fs-small);
     display: flex;
