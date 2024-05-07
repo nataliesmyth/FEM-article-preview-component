@@ -14,7 +14,13 @@ function updateWidth() {
     console.log(currentWidth)
 }
 
-updateWidth()
+function updateDisplay() {
+    if (currentWidth < 730) {
+        console.log('mobile view')
+    } else {
+        console.log('desktop view')
+    }
+}
 
 function handleClick() {
     console.log('share button clicked!')
@@ -39,6 +45,7 @@ function handleClick() {
         }
         console.log(socials)
 }
+console.log(shareActive.classList.contains('hidden'))
 
 shareButton.addEventListener('click', handleClick)
 window.addEventListener('resize', updateWidth)
